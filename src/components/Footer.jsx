@@ -31,7 +31,7 @@ export default function Footer() {
         style={{ backgroundColor: "#B29146" }}
       >
         <div className="mx-auto max-w-7xl px-6 py-14">
-          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
             {/* Marca */}
             <div>
               <a href="/" className="inline-flex items-center gap-3">
@@ -70,36 +70,14 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Serviços */}
-            <div>
-              <h4 className="text-lg font-semibold">Serviços</h4>
-              <ul className="mt-4 space-y-3">
-                <li>
-                  <a href="/servicos#tricopigmentacao" className="group inline-flex items-center gap-1 hover:underline">
-                    Tricopigmentação
-                    <FiArrowUpRight className="opacity-0 group-hover:opacity-100 transition" />
-                  </a>
-                </li>
-                <li>
-                  <a href="/servicos#correcao" className="group inline-flex items-center gap-1 hover:underline">
-                    Correção/Retouch
-                    <FiArrowUpRight className="opacity-0 group-hover:opacity-100 transition" />
-                  </a>
-                </li>
-                <li>
-                  <a href="/servicos#consultoria" className="group inline-flex items-center gap-1 hover:underline">
-                    Consulta & Avaliação
-                    <FiArrowUpRight className="opacity-0 group-hover:opacity-100 transition" />
-                  </a>
-                </li>
-              </ul>
-            </div>
+            
 
             {/* Navegação */}
             <div>
               <h4 className="text-lg font-semibold">Navegação</h4>
               <ul className="mt-4 space-y-3">
-                <li><a href="/galeria" className="hover:underline">Galeria</a></li>
+                <li><a href="#servicos" className="hover:underline">Serviços</a></li>
+                <li><a href="#gallery" className="hover:underline">Galeria</a></li>
                 <li><a href="/sobre" className="hover:underline">Sobre nós</a></li>
                 <li><a href="/faq" className="hover:underline">FAQ</a></li>
                 <li><a href="/politica-privacidade" className="hover:underline">Política de Privacidade</a></li>
@@ -112,20 +90,22 @@ export default function Footer() {
               <ul className="mt-4 space-y-3">
                 <li className="flex items-start gap-3">
                   <FiMapPin className="mt-1 shrink-0" />
-                  <span>Estúdio Rebello, Aveiro — Portugal</span>
+                  <span>Rebello Micropigmentação<br/>Aveiro — Portugal</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <FiPhone className="shrink-0" />
-                  <a href="tel:+351000000000" className="hover:underline">+351 000 000 000</a>
+                  <a href="tel:+351912023400" className="hover:underline">+351 912 023 400</a>
                 </li>
                 <li className="flex items-center gap-3">
                   <FiMail className="shrink-0" />
-                  <a href="mailto:contacto@rebello.pt" className="hover:underline">contacto@rebello.pt</a>
+                  <a href="mailto:diogorebelo.edu@gmail.com" className="hover:underline">diogorebelo.edu@gmail.com</a>
                 </li>
               </ul>
 
               <a
-                href="/contacto"
+                 href="https://wa.me/351912023400"
+                target="_blank"
+                rel="noreferrer"
                 className="mt-6 inline-flex items-center justify-center rounded-xl bg-black/30 px-5 py-3 font-medium ring-1 ring-white/40 hover:bg-black/40 transition"
               >
                 Marcar consulta
