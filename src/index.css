@@ -13,25 +13,25 @@
 h1 {
   font-family: var(--font-sans);
   font-size: 48px;
-  font-weight: 700; /* Bold */
+  
 }
 
 h2 {
   font-family: var(--font-sans);
   font-size: 40px;
-  font-weight: 600; /* Semibold */
+  
 }
 
 h3 {
   font-family: var(--font-sans);
   font-size: 30px;
-  font-weight: 600;
+  
 }
 
 h4 {
   font-family: var(--font-sans);
   font-size: 22px;
-  font-weight: 600;
+  
 }
 
 /* Corpo do texto */
@@ -47,12 +47,12 @@ body {
 small {
   font-size: 12px;
   font-family: var(--font-sans);
-  font-weight: 400;
+  
 }
 
 /* Títulos cursivos */
 .cursive-title {
   font-family: var(--font-cursive);
   font-size: 48px;
-  font-weight: 400;
+  
 }
