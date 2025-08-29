@@ -59,3 +59,157 @@ small {
   
 }
 
+
+
+
+/* ========= HERO BASE ========= */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+  pointer-events: none;
+  background-size: cover;
+  background-position: center;
+  filter: saturate(1.05) contrast(1.05);
+  will-change: transform;
+}
+/* overlay degradé azulado */
+.hero-gradient-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 18, 26, 0.5),
+    rgba(0, 27, 40, 0.44),
+    rgba(0, 11, 18, 1)
+  );
+  mix-blend-mode: multiply;
+}
+/* caustics base */
+.hero-caustics {
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+  opacity: 0.4;
+}
+.hero-caustics::before {
+  content: "";
+  position: absolute;
+  width: 160%;
+  height: 160%;
+  left: -30%;
+  top: -30%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 180, 255, 0.18),
+    transparent 60%
+  );
+  filter: blur(16px);
+  animation: floatSlow 9s ease-in-out infinite;
+}
+/* brilho à frente do texto */
+.hero-glow-front {
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translateX(-50%);
+  width: min(60vmin, 600px);
+  height: min(60vmin, 600px);
+  border-radius: 9999px;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.18),
+    transparent 60%
+  );
+  filter: blur(24px);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* ========= EFEITOS NOVOS ========= */
+/* sweep diagonal */
+.hero-light-sweep {
+  position: absolute;
+  inset: -20% -20%;
+  z-index: -5;
+  pointer-events: none;
+  background: linear-gradient(
+    75deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.04) 35%,
+    rgba(255, 255, 255, 0.12) 50%,
+    rgba(255, 255, 255, 0.04) 65%,
+    transparent 100%
+  );
+  mix-blend-mode: screen;
+  animation: sweep 9s linear infinite;
+  transform: translate3d(0,0,0);
+}
+@keyframes sweep {
+  0%   { transform: translate3d(-10%, -10%, 0) rotate(0.001deg); }
+  50%  { transform: translate3d(10%, 10%, 0) rotate(0.001deg); }
+  100% { transform: translate3d(-10%, -10%, 0) rotate(0.001deg); }
+}
+
+/* spotlight que segue o rato */
+.hero-spotlight {
+  position: fixed;
+  top: 0; left: 0;
+  width: 1px; height: 1px;
+  z-index: 5;
+  pointer-events: none;
+  will-change: transform, opacity;
+  transform: translate(-9999px,-9999px);
+  filter: blur(0.2px);
+  background:
+    radial-gradient(120px 120px at center,
+      rgba(80,200,255,0.35) 0%,
+      rgba(80,200,255,0.18) 35%,
+      rgba(80,200,255,0.08) 60%,
+      transparent 70%),
+    radial-gradient(280px 280px at center,
+      rgba(255,255,255,0.08) 0%,
+      transparent 70%);
+  mix-blend-mode: screen;
+  opacity: .85;
+}
+
+/* grain fino */
+.hero-grain {
+  position: absolute; inset: 0;
+  z-index: -4;
+  pointer-events: none;
+  opacity: .06;
+  background-image: url("/grain.svg"); /* ← agora vem do public/ */
+  background-size: 180px 180px;
+  animation: grainMove 14s steps(2,end) infinite;
+  mix-blend-mode: overlay;
+}
+
+@keyframes grainMove {
+  0%   { transform: translate(0,0) }
+  100% { transform: translate(-10%, -10%) }
+}
+
+/* animações auxiliares */
+@keyframes floatSlow {
+  0%   { transform: translateY(0px) }
+  50%  { transform: translateY(-10px) }
+  100% { transform: translateY(0px) }
+}
+@keyframes floatFast {
+  0%   { transform: translateY(0px) }
+  50%  { transform: translateY(-18px) }
+  100% { transform: translateY(0px) }
+}
+.animate-float-fast { animation: floatFast 5.5s ease-in-out infinite; }
+
+/* acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+  .hero-caustics::before,
+  .hero-light-sweep,
+  .hero-grain {
+    animation: none !important;
+  }
+}

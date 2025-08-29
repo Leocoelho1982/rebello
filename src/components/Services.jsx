@@ -32,9 +32,9 @@ export default function Services() {
         <div className="max-w-7xl mx-auto text-center">
           
           {/* Títulos com tamanho reduzido */}
-          <h3 className="text-2xl md:text-3xl text-gray-800 font-light"> 
+          <h2 className="text-2xl md:text-3xl text-gray-800 font-light">
             Os serviços da Rebello
-          </h3>
+          </h2>
           <p className="mt-3 text-xs md:text-sm text-gray-400 font-thin"> 
             Descobre todos os nossos serviços, descobre todos os nossos processos.
           </p>

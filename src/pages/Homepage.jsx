@@ -1,5 +1,6 @@
+// pages/Homepage.jsx
 import React from "react";
-import Header from "../components/Header";
+import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Gallery from "../components/Gallery";
 import Why from "../components/Why";
@@ -9,9 +10,10 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
 export default function Homepage(){
-    return(
-        <div className="px-4">
-        <Header />
+  return (
+    <>
+      <Hero />
+      
         <Services />
         <Gallery />
         <About />
@@ -19,6 +21,7 @@ export default function Homepage(){
         <Faq />
         <Contact />
         <Footer />
-        </div>
-    )
+      
+    </>
+  );
 }
