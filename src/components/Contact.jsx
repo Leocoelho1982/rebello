@@ -38,7 +38,7 @@ export default function Contact() {
       </a>
 
       {/* Cartões */}
-      <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+      <div id="#contacto" className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
         {/* Informações de contacto */}
         <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6 md:p-8 backdrop-blur">
           <h2 className="text-white text-lg font-semibold mb-6">
