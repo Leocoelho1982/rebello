@@ -15,7 +15,7 @@ export default function Contact() {
       style={{ backgroundColor: "#000" }}
     >
       {/* Título + descrição */}
-      <div className="max-w-2xl">
+      <div id="contacto" className="max-w-2xl">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
           Entre em contacto connosco
         </h1>
@@ -38,7 +38,7 @@ export default function Contact() {
       </a>
 
       {/* Cartões */}
-      <div id="#contacto" className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+      <div  className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
         {/* Informações de contacto */}
         <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6 md:p-8 backdrop-blur">
           <h2 className="text-white text-lg font-semibold mb-6">
