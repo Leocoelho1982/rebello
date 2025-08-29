@@ -133,6 +133,7 @@ export default function Hero() {
     transform: "translateX(-50%) translateY(50vh)", // começa centrado
   }}
 >
+  <small className="text-[#B29146]">MICROPIGMENTAÇÃO</small>
   <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight drop-shadow-lg">
     Redescubra a sua{" "}
     <span className="underline decoration-yellow-400/60">confiança</span>
