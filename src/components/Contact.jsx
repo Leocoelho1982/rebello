@@ -10,12 +10,12 @@ export default function Contact() {
   const whatsappHref = "https://wa.me/351912023400";
 
   return (
-    <section
+    <section id="contacto"
       className="min-h-screen flex flex-col items-center justify-center px-6 py-16 text-center gap-10"
       style={{ backgroundColor: "#000" }}
     >
       {/* Título + descrição */}
-      <div id="contacto" className="max-w-2xl">
+      <div  className="max-w-2xl">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
           Entre em contacto connosco
         </h1>
@@ -30,7 +30,8 @@ export default function Contact() {
         target="_blank"
         rel="noreferrer"
         className="inline-flex items-center gap-3 rounded-full px-8 py-4 text-lg font-semibold transition
-                   bg-[#B29146] text-black hover:bg-[#9c7e36] focus:outline-none focus:ring-4 focus:ring-white/20"
+           bg-[#25D366] text-white hover:bg-[#1DA851] focus:outline-none focus:ring-4 focus:ring-white/20"
+
         aria-label="Falar no WhatsApp"
       >
         <FiPhone size={22} />

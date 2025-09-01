@@ -46,14 +46,13 @@ export default function Gallery() {
   }, [emblaApi]);
 
   return (
-    <section id="gallery" className="py-16 bg-[#F9F9F9]" >
+    <section id="galeria" className="py-16 bg-[#F9F9F9]" >
       <div className="max-w-7xl mx-auto text-center px-4">
-        <h2 className="text-2xl md:text-3xl text-gray-800 font-light">
+        <h1 className="text-gray-800 font-bold">
           Galeria de Trabalhos
-        </h2>
+        </h1>
         <p className="mt-3 text-xs md:text-sm text-gray-400 max-w-2xl mx-auto">
-          Uma empresa fundada pelo Diogo desde 2007 a fazer clientes felizes, lá ele.
-          Trabalhamos com agulhas top market.
+          Cada resultado é único e personalizado. Aqui pode ver alguns dos trabalhos realizados, que demonstram a naturalidade e a precisão da micropigmentação capilar. O nosso compromisso é devolver confiança e autoestima através de técnicas seguras e modernas.
         </p>
       </div>
 

@@ -46,10 +46,10 @@ export default function Faq() {
       <div className="max-w-3xl mx-auto">
 
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl text-gray-800 font-light">
+          <h1 className="md:text-3xl text-gray-800 font-bold">
             Perguntas realizadas frequentemente
             <span className="block text-xl mt-1">(FAQ)</span>
-          </h2>
+          </h1>
           <p className="mt-4 text-sm text-gray-500 font-normal">
             Tudo o que você precisa de saber sobre os procedimentos de micropigmentação
           </p>

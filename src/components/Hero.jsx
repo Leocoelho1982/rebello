@@ -98,11 +98,12 @@ export default function Hero() {
 
             {/* Links Desktop */}
             <div className="hidden lg:flex items-center gap-4">
-              <NavLink href="#servicos">Serviços</NavLink>
-              <NavLink href="#gallery">Galeria</NavLink>
               <NavLink href="#sobre">
                 <span className="whitespace-nowrap">Sobre nós</span>
               </NavLink>
+              <NavLink href="#servicos">Serviços</NavLink>
+              <NavLink href="#galeria">Galeria</NavLink>
+              <NavLink href="#porque">Porquê a Rebello?</NavLink>
               <NavLink href="#faq">FAQ</NavLink>
               <a
                 href="#contacto"
@@ -150,14 +151,17 @@ export default function Hero() {
 
           {/* Lista de links mobile */}
           <nav className="mt-8 space-y-6 text-lg">
+            <a href="#sobre" className="block hover:text-white/90" onClick={() => setMobileOpen(false)}>
+              Sobre nós
+            </a>
             <a href="#servicos" className="block hover:text-white/90" onClick={() => setMobileOpen(false)}>
               Serviços
             </a>
-            <a href="#gallery" className="block hover:text-white/90" onClick={() => setMobileOpen(false)}>
+            <a href="#galeria" className="block hover:text-white/90" onClick={() => setMobileOpen(false)}>
               Galeria
             </a>
-            <a href="#sobre" className="block hover:text-white/90" onClick={() => setMobileOpen(false)}>
-              Sobre nós
+            <a href="#porque" className="block hover:text-white/90" onClick={() => setMobileOpen(false)}>
+              Porquê a Rebello?
             </a>
             <a href="#faq" className="block hover:text-white/90" onClick={() => setMobileOpen(false)}>
               FAQ

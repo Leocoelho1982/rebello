@@ -1,64 +1,66 @@
 import React from "react";
 // Importa o ícone que vamos usar da biblioteca lucide-react
-import { ShieldCheck, Zap, Smile } from "lucide-react";
+import { ShieldCheck, Zap, Smile, Clock, Edit3, RefreshCw } from "lucide-react";
 
-// Array com os dados para cada card. Fica fácil adicionar, remover ou editar!
+// Array com os dados para cada card
 const reasons = [
   {
     id: 1,
     icon: <ShieldCheck size={32} />,
-    title: "Segurança em primeiro",
+    title: "Segurança em Primeiro",
     description:
-      "A sua segurança é a nossa prioridade máxima. Utilizamos apenas materiais esterilizados e técnicas comprovadas para garantir um processo seguro e sem complicações.",
+      "Todos os procedimentos são realizados com materiais descartáveis e normas de higiene rigorosas, garantindo total segurança.",
   },
   {
     id: 2,
     icon: <Zap size={32} />,
-    title: "Tecnologia de Ponta",
+    title: "Tecnologia Avançada",
     description:
-      "Investimos nos equipamentos mais avançados do mercado para oferecer resultados precisos, naturais e duradouros com o mínimo de desconforto.",
+      "Equipamentos modernos e pigmentos de alta qualidade asseguram resultados naturais, realistas e de longa duração.",
   },
   {
     id: 3,
     icon: <Smile size={32} />,
-    title: "Garantia de Satisfação",
+    title: "Aumento da Autoestima",
     description:
-      "A Rebello garante o resultado. Se não ficar totalmente satisfeito com o processo inicial, trabalhamos consigo para refazer e alcançar a sua visão.",
+      "Recupere a confiança com um look renovado, discreto e harmonioso que valoriza a sua imagem pessoal.",
   },
-  // Podes adicionar mais 3 objetos aqui para ter 6 cards
   {
     id: 4,
-    icon: <ShieldCheck size={32} />,
-    title: "Segurança em primeiro",
+    icon: <Clock size={32} />,
+    title: "Recuperação Rápida",
     description:
-      "A sua segurança é a nossa prioridade máxima. Utilizamos apenas materiais esterilizados e técnicas comprovadas para garantir um processo seguro e sem complicações.",
+      "Procedimento minimamente invasivo que permite retomar a sua rotina em pouco tempo, sem complicações.",
   },
   {
     id: 5,
-    icon: <Zap size={32} />,
-    title: "Tecnologia de Ponta",
+    icon: <Edit3 size={32} />,
+    title: "Disfarce de Cicatrizes",
     description:
-      "Investimos nos equipamentos mais avançados do mercado para oferecer resultados precisos, naturais e duradouros com o mínimo de desconforto.",
+      "Camuflagem eficaz de cicatrizes e falhas capilares, proporcionando um aspeto uniforme e natural.",
   },
   {
     id: 6,
-    icon: <Smile size={32} />,
-    title: "Garantia de Satisfação",
+    icon: <RefreshCw size={32} />,
+    title: "Manutenção Garantida",
     description:
-      "A Rebello garante o resultado. Se não ficar totalmente satisfeito com o processo inicial, trabalhamos consigo para refazer e alcançar a sua visão.",
+      "Oferecemos acompanhamento contínuo para ajustes e retoques, assegurando a durabilidade do resultado ao longo dos anos.",
   },
 ];
 
+
+
+
 export default function Why() {
   return (
-    <section id="why-us" className="py-16 px-4 bg-gray-50">
+    <section id="porque" className="py-16 px-4 bg-black">
       <div className="max-w-7xl mx-auto">
 
         {/* Título da Secção */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl text-gray-800 font-light">
+          <h1 className="md:text-4xl text-white font-bold">
             Porquê escolher a Rebello?
-          </h2>
+          </h1>
         </div>
 
         {/* Grid Responsivo para os Cards */}

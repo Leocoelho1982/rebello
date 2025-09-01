@@ -35,12 +35,9 @@ export default function Services() {
           <h2 className="text-2xl md:text-3xl text-gray-800 font-light">
             Os serviços da Rebello
           </h2>
-          <p className="mt-3 text-xs md:text-sm text-gray-400"> 
-            Descobre todos os nossos serviços, descobre todos os nossos processos.
-          </p>
 
           {/* Container Flexbox para o layout lado a lado */}
-          <div className="mt-12 flex flex-col items-center lg:flex-row lg:items-center lg:justify-center lg:gap-16">
+          <div className="mt-12 flex flex-col items-center lg:flex-row lg:items-center lg:justify-center lg:gap-16 ">
 
             {/* Coluna da Esquerda: Slider de Comparação */}
             <div className="w-full max-w-md lg:w-1/2">
@@ -89,8 +86,8 @@ export default function Services() {
                 <p className="text-xs text-gray-700">
                   <strong>Duração:</strong> Dependente do número de sessões necessárias
                 </p>
-                <button className="bg-[#B29146] cursor-pointer text-white font-semibold py-2 px-5 rounded-lg hover:bg-[#a9936e] transition-colors duration-300 shadow-md w-full sm:w-auto">
-                  Agendar
+                <button className="bg-[#B29146] cursor-pointer text-white border-white border-1 font-semibold py-2 px-5 rounded-lg hover:bg-[#a9936e] transition-colors duration-300 shadow-md w-full sm:w-auto">
+                  Marcar Consulta
                 </button>
               </div>
             </div>
