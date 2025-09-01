@@ -65,7 +65,7 @@ export default function Faq() {
                 className="w-full flex justify-between items-center text-left p-4 md:p-5"
               >
                 {/* Tamanho da fonte agora é responsivo: text-sm em mobile, text-base em desktop */}
-                <h3 className="text-sm md:text-base font-light text-gray-700">{item.question}</h3>
+                <p className="text-sm font-semibold text-gray-700">{item.question}</p>
                 <ChevronDown
                   className={`transform transition-transform duration-300 text-gray-400 ${openIndex === index ? 'rotate-180' : ''}`}
                   size={20}
