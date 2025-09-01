@@ -82,7 +82,7 @@ export default function Hero() {
                 src={logo_rebello_r}
                 alt="Logo Rebello"
                 className={`w-auto object-contain transition-all duration-300 ${
-                  scrolled ? "h-10" : "h-20"
+                  scrolled ? "h-10" : "h-16"
                 }`}
               />
             </a>
