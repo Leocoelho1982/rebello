@@ -13,10 +13,10 @@ export default function Homepage(){
   return (
     <>
       <Hero />
-      
+      <About />
         <Services />
         <Gallery />
-        <About />
+        
         <Why />
         <Faq />
         <Contact />

@@ -35,7 +35,7 @@ export default function Services() {
           <h2 className="text-2xl md:text-3xl text-gray-800 font-light">
             Os serviços da Rebello
           </h2>
-          <p className="mt-3 text-xs md:text-sm text-gray-400 font-thin"> 
+          <p className="mt-3 text-xs md:text-sm text-gray-400"> 
             Descobre todos os nossos serviços, descobre todos os nossos processos.
           </p>
 
