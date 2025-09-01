@@ -1,5 +1,6 @@
 import React from "react";
 import DiogoImage from "../assets/diogo-martins.jpeg";
+import Container from "./Container"; 
 
 const certificates = [
   "Formação certificada em Micropigmentação Capilar",
@@ -13,22 +14,14 @@ const certificates = [
 
 export default function About() {
   return (
-    // AQUI ESTÃO AS PRINCIPAIS MUDANÇAS:
-    // 1. `relative z-10`: Coloca esta secção numa camada superior.
-    // 2. `-mt-[100vh]`: Puxa esta secção para cima, fazendo-a sobrepor-se ao final do Hero.
-    // 3. `rounded-t-3xl`: Arredonda os cantos superiores para um deslize suave.
-    // 4. `shadow-2xl`: Adiciona uma sombra forte para dar profundidade.
     <section 
       id="sobre" 
-      className="relative z-10 -mt-[100vh] rounded-t-3xl lg:rounded-t-[40px] shadow-2xl overflow-hidden"
+      className="relative z-10 -mt-[100vh] shadow-2xl overflow-hidden"
     >
-      <div className="bg-[#F9F9F9] py-16 px-4">
-        <div className="max-w-7xl mx-auto text-center">
+      <div className="bg-[#F9F9F9] py-16">
+        <Container>
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl text-gray-800 font-light">
-              Sobre nós
-            </h2>
-         
+            
           </div>
 
           <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-16">
@@ -36,9 +29,12 @@ export default function About() {
               <img 
                 src={DiogoImage} 
                 alt="Diogo Rebello a realizar um procedimento"
-                className="rounded-3xl object-cover w-full max-w-sm" // Sombra removida da imagem, já está no container
+                className="rounded-3xl object-cover w-full max-w-sm"
               />
             </div>
+            <h2 className="text-3xl md:text-4xl text-gray-800 font-light">
+            <small>SOBRE NÓS</small>
+            </h2>
 
             <div className="w-full lg:w-3/5 text-center lg:text-left">
               <h3 className="text-2xl md:text-3xl font-semibold text-gray-800">
@@ -62,7 +58,7 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </div>
     </section>
   );
