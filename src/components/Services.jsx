@@ -89,7 +89,7 @@ export default function Services() {
                 <p className="text-xs text-gray-700">
                   <strong>Duração:</strong> Dependente do número de sessões necessárias
                 </p>
-                <button className="bg-[#bda67f] text-white font-semibold py-2 px-5 rounded-lg hover:bg-[#a9936e] transition-colors duration-300 shadow-md w-full sm:w-auto">
+                <button className="bg-[#B29146] cursor-pointer text-white font-semibold py-2 px-5 rounded-lg hover:bg-[#a9936e] transition-colors duration-300 shadow-md w-full sm:w-auto">
                   Agendar
                 </button>
               </div>
