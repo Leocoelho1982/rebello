@@ -7,12 +7,37 @@ import ImagemDepois from "../assets/depois.jpg";
 
 export default function Services() {
   return (
+
+    <>
+{/* SOLUÇÃO PARA AS LABELS:
+        Adicionamos um bloco de <style> para sobrepor diretamente os estilos da biblioteca.
+        Isto garante que as nossas personalizações são aplicadas.
+      */}
+      <style>{`
+        .ril__label {
+          background-color: transparent !important;
+          backdrop-filter: none !important;
+          color: #bda67f !important; /* Cor dourada */
+          font-family: 'Montserrat', sans-serif !important;
+          font-weight: 600 !important; /* semibold */
+          font-size: 14px !important;
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Sombra para legibilidade */
+          
+          /* Posicionamento no topo */
+          top: 1rem !important; 
+          bottom: auto !important;
+        }
+      `}</style>
+
+
+
+
     <section id="servicos" className="py-12 px-4 bg-white">
       <div className="max-w-7xl mx-auto ">
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-16">
           
           {/* Coluna Texto (maior) */}
-          <div className="w-full lg:w-7/12 text-center lg:text-left">
+          <div className="w-full lg:w-8/12 text-center lg:text-left">
             <small className="tracking-wide text-gray-500">
               OS SERVIÇOS DA REBELLO
             </small>
@@ -24,7 +49,7 @@ export default function Services() {
             </p>
 
             {/* Miniaturas */}
-            <div className="flex justify-center lg:justify-start gap-4 mt-6">
+            <div className="flex justify-center lg:justify-start gap-4 mt-6 ">
               <div className="text-center">
                 <img
                   src={ImagemAntes}
@@ -54,9 +79,9 @@ export default function Services() {
               </button>
             </div>
           </div>
-
+        
           {/* Coluna Imagem (menor) */}
-          <div className="w-full lg:w-5/12 flex justify-center">
+          <div className="w-full lg:w-4/12 flex justify-center">
             <ReactCompareImage
               leftImage={ImagemAntes}
               rightImage={ImagemDepois}
@@ -68,5 +93,7 @@ export default function Services() {
         </div>
       </div>
     </section>
+
+    </>
   );
 }

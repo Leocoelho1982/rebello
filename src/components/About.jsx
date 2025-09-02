@@ -1,5 +1,5 @@
 import React from "react";
-import DiogoImage from "../assets/diogo-martins.jpeg";
+import DiogoImage from "../assets/diogo-martins.jpg";
 
 const certificates = [
   "Formação certificada em Micropigmentação Capilar",
@@ -21,7 +21,7 @@ export default function About() {
           <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-16">
             
             {/* Coluna da imagem - menor */}
-            <div className="w-full lg:w-5/12 flex justify-center">
+            <div className="w-full lg:w-3/12 flex justify-center">
               <img
                 src={DiogoImage}
                 alt="Diogo Rebello a realizar um procedimento"
@@ -30,7 +30,7 @@ export default function About() {
             </div>
 
             {/* Coluna do texto - maior */}
-            <div className="w-full lg:w-7/12 text-center lg:text-left">
+            <div className="w-full lg:w-9/12 text-center lg:text-left">
               <small className="tracking-wide text-gray-500">SOBRE NÓS</small>
               <h3 className="text-2xl md:text-3xl font-bold text-gray-800">
                 Diogo Rebello
