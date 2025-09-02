@@ -63,7 +63,7 @@ export default function Faq() {
               {/* Padding ajustado para ser mais pequeno em mobile */}
               <button
                 onClick={() => handleToggle(index)}
-                className="w-full flex justify-between items-center text-left p-4 md:p-5"
+                className="w-full flex justify-between items-center text-left p-4 md:p-5 cursor-pointer "
               >
                 {/* Tamanho da fonte agora é responsivo: text-sm em mobile, text-base em desktop */}
                 <p className="text-sm font-semibold text-gray-700">{item.question}</p>
