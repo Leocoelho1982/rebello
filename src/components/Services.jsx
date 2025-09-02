@@ -1,5 +1,6 @@
 import React from "react";
-import ReactCompareImage from "react-compare-image";
+// 1. Importa o componente da NOVA biblioteca
+import { ImgComparisonSlider } from "@img-comparison-slider/react";
 
 // Imgs
 import ImagemAntes from "../assets/antes.jpg";
@@ -7,33 +8,8 @@ import ImagemDepois from "../assets/depois.jpg";
 
 export default function Services() {
   return (
-
-    <>
-{/* SOLUÇÃO PARA AS LABELS:
-        Adicionamos um bloco de <style> para sobrepor diretamente os estilos da biblioteca.
-        Isto garante que as nossas personalizações são aplicadas.
-      */}
-      <style>{`
-        .ril__label {
-          background-color: transparent !important;
-          backdrop-filter: none !important;
-          color: #bda67f !important; /* Cor dourada */
-          font-family: 'Montserrat', sans-serif !important;
-          font-weight: 600 !important; /* semibold */
-          font-size: 14px !important;
-          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Sombra para legibilidade */
-          
-          /* Posicionamento no topo */
-          top: 1rem !important; 
-          bottom: auto !important;
-        }
-      `}</style>
-
-
-
-
-    <section id="servicos" className="py-12 px-4 bg-white">
-      <div className="max-w-7xl mx-auto ">
+    <section id="servicos" className="py-16 px-4 bg-white">
+      <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-16">
           
           {/* Coluna Texto (maior) */}
@@ -41,14 +17,13 @@ export default function Services() {
             <small className="tracking-wide text-gray-500">
               OS SERVIÇOS DA REBELLO
             </small>
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-800">
+            <h2 className="text-2xl md:text-3xl text-gray-800 font-light mt-1">
               Micropigmentação Capilar
-            </h3>
+            </h2>
             <p className="mt-4 text-base text-gray-600 font-light leading-relaxed">
               Através do nosso processo indolor, devolvemos a densidade e a confiança ao seu cabelo.
             </p>
 
-            {/* Miniaturas */}
             <div className="flex justify-center lg:justify-start gap-4 mt-6 ">
               <div className="text-center">
                 <img
@@ -74,26 +49,33 @@ export default function Services() {
               <p className="text-xs text-gray-700">
                 <strong>Duração:</strong> Dependente do número de sessões necessárias
               </p>
-              <button className="bg-[#B29146] cursor-pointer text-white border-white border-1 font-semibold py-2 px-5 rounded-lg hover:bg-[#a9936e] transition-colors duration-300 shadow-md w-full sm:w-auto">
+              <button className="bg-[#B29146] cursor-pointer text-white font-semibold py-2 px-5 rounded-lg hover:bg-[#a9936e] transition-colors duration-300 shadow-md w-full sm:w-auto">
                 Marcar Consulta
               </button>
             </div>
           </div>
-        
-          {/* Coluna Imagem (menor) */}
+
+          {/* Coluna Imagem (menor) com o NOVO slider */}
           <div className="w-full lg:w-4/12 flex justify-center">
-            <ReactCompareImage
-              leftImage={ImagemAntes}
-              rightImage={ImagemDepois}
-              leftImageLabel="Antes"
-              rightImageLabel="Depois"
-              className="rounded-3xl shadow-xl"
-            />
+            {/* 2. Usa o novo componente. O 'easing' já vem por defeito! */}
+            <ImgComparisonSlider className="rounded-3xl shadow-xl focus:outline-none">
+              
+              {/* As imagens agora são passadas como filhos com o atributo 'slot' */}
+              <img slot="first" src={ImagemAntes} alt="Antes do tratamento" />
+              <img slot="second" src={ImagemDepois} alt="Depois do tratamento" />
+
+              {/* Também podemos adicionar as nossas labels customizadas aqui */}
+              <span slot="first" className="absolute top-4 left-4 z-10 py-1 px-3 text-[#bda67f] text-sm font-semibold rounded-md" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.4)'}}>
+                Antes
+              </span>
+              <span slot="second" className="absolute top-4 right-4 z-10 py-1 px-3 text-[#bda67f] text-sm font-semibold rounded-md" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.4)'}}>
+                Depois
+              </span>
+              
+            </ImgComparisonSlider>
           </div>
         </div>
       </div>
     </section>
-
-    </>
   );
 }
