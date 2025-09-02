@@ -1,5 +1,6 @@
 import React from "react";
 import ReactCompareImage from "react-compare-image";
+import Container from "./Container"; 
 
 // Imgs
 import ImagemAntes from "../assets/antes.jpg";

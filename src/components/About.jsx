@@ -28,6 +28,9 @@ export default function About() {
                 className="rounded-3xl object-cover w-full "
               />
             </div>
+            <h2 className="text-3xl md:text-4xl text-gray-800 font-light">
+            <small>SOBRE NÓS</small>
+            </h2>
 
             {/* Coluna do texto - maior */}
             <div className="w-full lg:w-9/12 text-center lg:text-left">
@@ -60,7 +63,7 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </div>
     </section>
   );

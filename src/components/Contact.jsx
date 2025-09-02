@@ -5,6 +5,7 @@ import {
   FiMapPin,
   FiClock,
 } from "react-icons/fi";
+import Container from "./Container"; 
 
 export default function Contact() {
   const whatsappHref = "https://wa.me/351912023400";
@@ -83,11 +84,18 @@ export default function Contact() {
           </ul>
         </div>
 
-        {/* Horário */}
-        <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6 md:p-8 backdrop-blur">
-          <h2 className="text-white text-lg font-semibold mb-6">
-            Horário de atendimento
-          </h2>
+        {/* Botão WhatsApp */}
+        <a
+          href={whatsappHref}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-3 rounded-full px-8 py-4 text-lg font-semibold transition cursor-pointer
+            bg-[#25D366] text-white hover:bg-[#1DA851] focus:outline-none focus:ring-4 focus:ring-white/20"
+          aria-label="Falar no WhatsApp"
+        >
+          <FiPhone size={22} />
+          Falar no WhatsApp
+        </a>
 
           <div className="space-y-5 text-white/90">
             <Row label="Segunda" value="14H30 - 19H30" />
@@ -96,12 +104,24 @@ export default function Contact() {
             <Row label="Domingo e Feriados" value="Encerrado" />
           </div>
 
-          <div className="mt-6 inline-flex items-center gap-2 text-white/70">
-            <FiClock />
-            <span>Atendimento por marcação</span>
+          {/* Horário */}
+          <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6 md:p-8 backdrop-blur">
+            <h2 className="text-white text-lg font-semibold mb-6">
+              Horário de atendimento
+            </h2>
+            <div className="space-y-5 text-white/90">
+              <Row label="Segunda-Feira" value="14H30 - 19H30" />
+              <Row label="Terça-Feira a Sexta-Feira" value="9H00 - 19H30" />
+              <Row label="Sábado" value="8H00 - 13H00" />
+              <Row label="Domingo e Feriados" value="Encerrado" />
+            </div>
+            <div className="mt-6 inline-flex items-center gap-2 text-white/70">
+              <FiClock />
+              <span>Atendimento por marcação</span>
+            </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

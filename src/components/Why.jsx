@@ -1,6 +1,7 @@
 import React from "react";
 // Importa o ícone que vamos usar da biblioteca lucide-react
 import { ShieldCheck, Zap, Smile, Clock, Edit3, RefreshCw } from "lucide-react";
+import Container from "./Container"; // Passo 1: Importar o nosso novo componente
 
 // Array com os dados para cada card
 const reasons = [
@@ -48,22 +49,16 @@ const reasons = [
   },
 ];
 
-
-
-
 export default function Why() {
   return (
-    <section id="porque" className="py-16 px-4 bg-black">
-      <div className="max-w-7xl mx-auto">
-
-        {/* Título da Secção */}
+    <section id="porque" className="py-16 bg-gray-50"> 
+      <Container>
         <div className="text-center mb-12">
           <h2 className=" text-white font-bold">
             Porquê escolher a Rebello?
           </h2>
         </div>
 
-        {/* Grid Responsivo para os Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {reasons.map((reason) => (
             <div
@@ -87,7 +82,7 @@ export default function Why() {
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

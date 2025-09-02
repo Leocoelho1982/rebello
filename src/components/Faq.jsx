@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import Container from "./Container"; 
 
 const faqData = [
   {
@@ -59,26 +60,24 @@ export default function Faq() {
         <div className="space-y-4">
           {faqData.map((item, index) => (
             <div key={item.id} className="bg-white rounded-lg shadow border border-gray-100 overflow-hidden">
-              
-              {/* Padding ajustado para ser mais pequeno em mobile */}
               <button
                 onClick={() => handleToggle(index)}
-                className="w-full flex justify-between items-center text-left p-4 md:p-5"
+                className="w-full flex justify-between items-center text-left p-4 md:p-5 cursor-pointer"
               >
-                {/* Tamanho da fonte agora é responsivo: text-sm em mobile, text-base em desktop */}
-                <p className="text-sm font-semibold text-gray-700">{item.question}</p>
+                <p className="text-sm md:text-base font-light text-gray-700">{item.question}</p>
                 <ChevronDown
-                  className={`transform transition-transform duration-300 text-gray-400 ${openIndex === index ? 'rotate-180' : ''}`}
+                  className={`transform transition-transform duration-300 text-gray-400 ${
+                    openIndex === index ? "rotate-180" : ""
+                  }`}
                   size={20}
                 />
               </button>
 
               <div
                 className={`overflow-hidden transition-[max-height] duration-500 ease-in-out ${
-                  openIndex === index ? 'max-h-96' : 'max-h-0'
+                  openIndex === index ? "max-h-96" : "max-h-0"
                 }`}
               >
-                {/* Padding da resposta também ajustado para consistência */}
                 <div className="px-4 pb-4 md:px-5 md:pb-5">
                   <p className="text-sm font-light text-gray-600 leading-relaxed">
                     {item.answer}
@@ -88,7 +87,7 @@ export default function Faq() {
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

@@ -1,15 +1,13 @@
 import React from "react";
-
 import logoRebello from "../assets/logo_rebello_h.svg";
-
 import {
   FiInstagram,
   FiFacebook,
   FiPhone,
   FiMail,
   FiMapPin,
-  FiArrowUpRight,
 } from "react-icons/fi";
+import Container from "./Container"; 
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -32,29 +30,27 @@ export default function Footer() {
       >
         <div className="mx-auto max-w-7xl  py-14">
           <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            
             {/* Marca */}
             <div>
               <a href="/" className="inline-flex items-center gap-3">
-                {/* LOGO SVG */}
                 <img
                   src={logoRebello}
                   alt="Rebello"
-                  className="h-18 w-auto brightness-0 invert" 
+                  className="h-16 w-auto brightness-0 invert" // Ajustei a altura do logo para h-16
                 />
               </a>
-              <p className="mt-4 text-white/90 leading-relaxed">
+              <p className="mt-4 text-white/90 leading-relaxed text-sm"> {/* Adicionado text-sm */}
                 Micropigmentação capilar com resultados naturais e
                 personalizados. Experiência, rigor e confidencialidade.
               </p>
-
-              {/* sociais */}
               <div className="mt-6 flex items-center gap-4">
                 <a
                   href="https://www.instagram.com/rebello_smp/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Instagram Rebello"
-                  className="rounded-full p-2 ring-1 ring-white/50 hover:ring-white transition"
+                  className="rounded-full p-2 ring-1 ring-white/50 hover:ring-white transition cursor-pointer"
                 >
                   <FiInstagram size={20} />
                 </a>
@@ -67,8 +63,6 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-
-            
 
             {/* Navegação */}
             <div>
@@ -86,7 +80,7 @@ export default function Footer() {
             {/* Contactos */}
             <div>
               <h4 className="text-lg font-semibold">Contactos</h4>
-              <ul className="mt-4 space-y-3">
+              <ul className="mt-4 space-y-3 text-sm"> {/* Adicionado text-sm */}
                 <li className="flex items-start gap-3">
                   <FiMapPin className="mt-1 shrink-0" />
                   <span>Rebello Micropigmentação<br/>Aveiro — Portugal</span>
@@ -100,23 +94,20 @@ export default function Footer() {
                   <a href="mailto:diogorebelo.edu@gmail.com" className="hover:underline">diogorebelo.edu@gmail.com</a>
                 </li>
               </ul>
-
               <a
-                 href="https://wa.me/351912023400"
+                href="https://wa.me/351912023400"
                 target="_blank"
                 rel="noreferrer"
-                className="mt-6 inline-flex items-center justify-center rounded-xl bg-black/30 px-5 py-3 font-medium ring-1 ring-white/40 hover:bg-black/40 transition"
+                className="mt-6 inline-flex items-center justify-center rounded-xl bg-black/30 px-5 py-3 font-medium ring-1 ring-white/40 hover:bg-black/40 transition cursor-pointer"
               >
                 Marcar consulta
               </a>
             </div>
           </div>
-        </div>
+        </Container>
       </div>
-
-      {/* faixa de créditos */}
-      <div className="relative bg-black text-white">
-        <div className="mx-auto max-w-7xl px-6 py-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div className="relative bg-black/20"> {/* Suavizei o fundo para se integrar melhor */}
+        <Container className="flex flex-col gap-3 py-4 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-sm text-white/80">
             © {year} Rebello. Todos os direitos reservados.
           </p>
@@ -132,7 +123,7 @@ export default function Footer() {
               CoDi Creative
             </a>
           </p>
-        </div>
+        </Container>
       </div>
     </footer>
   );
