@@ -9,28 +9,6 @@ export default function Services() {
   return (
 
     <>
-{/* SOLUÇÃO PARA AS LABELS:
-        Adicionamos um bloco de <style> para sobrepor diretamente os estilos da biblioteca.
-        Isto garante que as nossas personalizações são aplicadas.
-      */}
-      <style>{`
-        .ril__label {
-          background-color: transparent !important;
-          backdrop-filter: none !important;
-          color: #bda67f !important; /* Cor dourada */
-          font-family: 'Montserrat', sans-serif !important;
-          font-weight: 600 !important; /* semibold */
-          font-size: 14px !important;
-          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Sombra para legibilidade */
-          
-          /* Posicionamento no topo */
-          top: 1rem !important; 
-          bottom: auto !important;
-        }
-      `}</style>
-
-
-
 
     <section id="servicos" className="py-12 px-4 bg-white">
       <div className="max-w-7xl mx-auto ">
