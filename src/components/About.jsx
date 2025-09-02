@@ -1,5 +1,5 @@
 import React from "react";
-import DiogoImage from "../assets/diogo-martins.jpeg";
+import DiogoImage from "../assets/diogo-martins.jpg";
 
 const certificates = [
   "Formação certificada em Micropigmentação Capilar",
