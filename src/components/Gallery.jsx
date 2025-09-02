@@ -10,9 +10,9 @@ import GalleryImage2 from "../assets/gallery3.jpeg"; // Exemplo de imagem, impor
 
 
 const galleryItems = [
-  { id: 1, image: GalleryImage, title: "Micro pigmentação", description: "Com agulha diodo" },
   { id: 2, image: GalleryImage1, title: "Serviço 2", description: "Detalhes do serviço 2" },
   { id: 3, image: GalleryImage2, title: "Serviço 3", description: "Detalhes do serviço 3" },
+  { id: 1, image: GalleryImage, title: "Micro pigmentação", description: "Com agulha diodo" },
   { id: 4, image: GalleryImage, title: "Serviço 4", description: "Detalhes do serviço 4" },
   { id: 5, image: GalleryImage, title: "Serviço 5", description: "Detalhes do serviço 5" },
   { id: 6, image: GalleryImage, title: "Serviço 6", description: "Detalhes do serviço 6" },
@@ -48,11 +48,14 @@ export default function Gallery() {
   return (
     <section id="galeria" className="py-16 bg-[#F9F9F9]" >
       <div className="max-w-7xl mx-auto text-center px-4">
-        <h1 className="text-gray-800 font-bold">
+        <h3 className="text-2xl md:text-3xl font-bold text-gray-800">
           Galeria de Trabalhos
-        </h1>
-        <p className="mt-3 text-xs md:text-sm text-gray-400 max-w-2xl mx-auto">
-          Cada resultado é único e personalizado. Aqui pode ver alguns dos trabalhos realizados, que demonstram a naturalidade e a precisão da micropigmentação capilar. O nosso compromisso é devolver confiança e autoestima através de técnicas seguras e modernas.
+        </h3>
+        <p className="mt-3  text-gray-400 max-w-7xl mx-auto">
+          Cada resultado é único e personalizado. 
+          </p>
+          <p className="mt-3  text-gray-400 max-w-7xl mx-auto">
+          Aqui pode ver alguns dos trabalhos realizados, que demonstram a naturalidade e a precisão da micropigmentação capilar.<br/> O nosso compromisso é devolver confiança e autoestima através de técnicas seguras e modernas.
         </p>
       </div>
 

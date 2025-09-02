@@ -8,6 +8,7 @@ import About from "../components/About";
 import Faq from "../components/Faq";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Testimonials from "../components/Testimonials";
 
 export default function Homepage(){
   return (
@@ -20,6 +21,7 @@ export default function Homepage(){
         <Why />
         <Faq />
         <Contact />
+        <Testimonials />
         <Footer />
       
     </>

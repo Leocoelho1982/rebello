@@ -15,7 +15,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative text-white">
+    <footer className="relative text-white ">
       {/* textura/overlay suave opcional */}
       <div
         className="absolute inset-0 pointer-events-none opacity-20"
@@ -27,10 +27,10 @@ export default function Footer() {
 
       {/* bloco principal */}
       <div
-        className="relative"
+        className="relative px-4"
         style={{ backgroundColor: "#B29146" }}
       >
-        <div className="mx-auto max-w-7xl px-6 py-14">
+        <div className="mx-auto max-w-7xl  py-14">
           <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
             {/* Marca */}
             <div>
@@ -58,15 +58,13 @@ export default function Footer() {
                 >
                   <FiInstagram size={20} />
                 </a>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noreferrer"
+                <div
                   aria-label="Facebook Rebello"
                   className="rounded-full p-2 ring-1 ring-white/50 hover:ring-white transition"
+                  
                 >
                   <FiFacebook size={20} />
-                </a>
+                </div>
               </div>
             </div>
 
@@ -76,10 +74,11 @@ export default function Footer() {
             <div>
               <h4 className="text-lg font-semibold">Navegação</h4>
               <ul className="mt-4 space-y-3">
+                <li><a href="#sobre" className="hover:underline">Sobre nós</a></li>
                 <li><a href="#servicos" className="hover:underline">Serviços</a></li>
-                <li><a href="#gallery" className="hover:underline">Galeria</a></li>
-                <li><a href="/sobre" className="hover:underline">Sobre nós</a></li>
-                <li><a href="/faq" className="hover:underline">FAQ</a></li>
+                <li><a href="#galeria" className="hover:underline">Galeria</a></li>
+                <li><a href="#porque" className="hover:underline">Porquê a Rebello?</a></li>
+                <li><a href="#faq" className="hover:underline">FAQ</a></li>
                 <li><a href="/politica-privacidade" className="hover:underline">Política de Privacidade</a></li>
               </ul>
             </div>

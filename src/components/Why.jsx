@@ -58,9 +58,9 @@ export default function Why() {
 
         {/* Título da Secção */}
         <div className="text-center mb-12">
-          <h1 className="md:text-4xl text-white font-bold">
+          <h2 className=" text-white font-bold">
             Porquê escolher a Rebello?
-          </h1>
+          </h2>
         </div>
 
         {/* Grid Responsivo para os Cards */}

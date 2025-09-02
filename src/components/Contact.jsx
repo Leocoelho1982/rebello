@@ -11,12 +11,12 @@ export default function Contact() {
 
   return (
     <section id="contacto"
-      className="min-h-screen flex flex-col items-center justify-center px-6 py-16 text-center gap-10"
+      className="min-h-screen flex flex-col items-center justify-center px-4 py-16 text-center gap-10"
       style={{ backgroundColor: "#000" }}
     >
       {/* Título + descrição */}
-      <div  className="max-w-2xl">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+      <div  className="max-w-7xl">
+        <h1 className="text-4xl md:text-7xl font-bold text-white mb-4">
           Entre em contacto connosco
         </h1>
         <p className="text-lg text-white/80">
@@ -39,7 +39,7 @@ export default function Contact() {
       </a>
 
       {/* Cartões */}
-      <div  className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+      <div  className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
         {/* Informações de contacto */}
         <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6 md:p-8 backdrop-blur">
           <h2 className="text-white text-lg font-semibold mb-6">
@@ -90,8 +90,8 @@ export default function Contact() {
           </h2>
 
           <div className="space-y-5 text-white/90">
-            <Row label="Segunda-Feira" value="14H30 - 19H30" />
-            <Row label="Terça-Feira a Sexta-Feira" value="9H00 - 19H30" />
+            <Row label="Segunda" value="14H30 - 19H30" />
+            <Row label="Terça a Sexta" value="9H00 - 19H30" />
             <Row label="Sábado" value="8H00 - 13H00" />
             <Row label="Domingo e Feriados" value="Encerrado" />
           </div>
