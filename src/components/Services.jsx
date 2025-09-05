@@ -4,6 +4,7 @@ import ImagemAntes from "../assets/antes.jpg";
 import ImagemDepois from "../assets/depois.jpg";
 
 export default function Services() {
+  const whatsappHref = "https://wa.me/351912023400";
   return (
 
     <>
@@ -69,9 +70,14 @@ export default function Services() {
               <p className="text-xs text-gray-700">
                 <strong>Duração:</strong> Dependente do número de sessões necessárias
               </p>
+              <a
+        href={whatsappHref}
+        target="_blank"
+        rel="noreferrer">
               <button className="bg-[#B29146] cursor-pointer text-white border-white border-1 font-semibold py-2 px-5 rounded-lg hover:bg-[#a9936e] transition-colors duration-300 shadow-md w-full sm:w-auto">
                 Marcar Consulta
               </button>
+              </a>
             </div>
           </div>
         
