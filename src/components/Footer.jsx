@@ -123,13 +123,13 @@ export default function Footer() {
           <p className="text-sm">
             Criado por{" "}
             <a
-              href="https://codi-creative.example"
+              href="https://smartcodi.com"
               target="_blank"
               rel="noreferrer"
               className="font-medium underline decoration-white/50 hover:decoration-white"
-              aria-label="CoDi Creative (abre nova aba)"
+              aria-label="SmartCoDi (abre nova aba)"
             >
-              CoDi Creative
+              SmartCoDi Web Technologies
             </a>
           </p>
         </div>
