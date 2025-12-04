@@ -3,6 +3,13 @@ import useEmblaCarousel from "embla-carousel-react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi"; // react-icons
 
 // IMPORTAÇÕES DAS FOTOS SELECCIONADAS
+import Img0002 from "../assets/IMG-20251126-WA0002.jpg";
+import Img0003 from "../assets/IMG-20251126-WA0003.jpg";
+import Img0004 from "../assets/IMG-20251126-WA0004.jpg";
+import Img0005 from "../assets/IMG-20251126-WA0005.jpg";
+import Img0006 from "../assets/IMG-20251126-WA0006.jpg";
+import Img0007 from "../assets/IMG-20251126-WA0007.jpg";
+
 import Img0012 from "../assets/IMG-20250902-WA0012.jpg";
 import Img0013 from "../assets/IMG-20250902-WA0013.jpg";
 import Img0014 from "../assets/IMG-20250902-WA0014.jpg";
@@ -15,16 +22,28 @@ import Gallery3 from "../assets/gallery3.jpeg";
 
 // Lista final da galeria
 const galleryItems = [
-  { id: 1, image: Img0012, title: "Foto" },
-  { id: 2, image: Img0013, title: "Foto" },
-  { id: 3, image: Img0014, title: "Foto" },
-  { id: 4, image: Img0015, title: "Foto" },
-  { id: 5, image: Img0016, title: "Foto" },
-  { id: 6, image: Img0017, title: "Foto" },
-  { id: 7, image: Img0018, title: "Foto" },
-  { id: 8, image: Gallery2, title: "Foto" },
-  { id: 9, image: Gallery3, title: "Foto" },
+  // 🔹 Novas fotos primeiro
+  { id: 1, image: Img0002, title: "Foto" },
+  { id: 2, image: Img0003, title: "Foto" },
+  { id: 3, image: Img0004, title: "Foto" },
+  { id: 4, image: Img0005, title: "Foto" },
+  { id: 5, image: Img0006, title: "Foto" },
+  { id: 6, image: Img0007, title: "Foto" },
+
+  // 🔹 Fotos antigas
+  { id: 7,  image: Img0012, title: "Foto" },
+  { id: 8,  image: Img0013, title: "Foto" },
+  { id: 9,  image: Img0014, title: "Foto" },
+  { id: 10, image: Img0015, title: "Foto" },
+  { id: 11, image: Img0016, title: "Foto" },
+  { id: 12, image: Img0017, title: "Foto" },
+  { id: 13, image: Img0018, title: "Foto" },
+
+  // 🔹 Outras da galeria
+  { id: 14, image: Gallery2, title: "Foto" },
+  { id: 15, image: Gallery3, title: "Foto" },
 ];
+
 
 export default function Gallery() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
