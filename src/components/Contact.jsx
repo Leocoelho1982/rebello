@@ -53,7 +53,7 @@ export default function Contact() {
               </span>
               <div>
                 <p className="text-sm uppercase tracking-wide text-white/60">Localização</p>
-                <p>R. de Anadia 16, 3810-208. Aveiro</p>
+                <p>R. Cónego Maio, 101A, 3810-089. Aveiro</p>
               </div>
             </li>
 
