@@ -13,7 +13,7 @@ import Img0007 from "../assets/IMG-20251126-WA0007.jpg";
 import Img0012 from "../assets/IMG-20250902-WA0012.jpg";
 import Img0013 from "../assets/IMG-20250902-WA0013.jpg";
 import Img0014 from "../assets/IMG-20250902-WA0014.jpg";
-import Img0015 from "../assets/IMG-20250902-WA0015.jpg";
+
 import Img0016 from "../assets/IMG-20250902-WA0016.jpg";
 import Img0017 from "../assets/IMG-20250902-WA0017.jpg";
 import Img0018 from "../assets/IMG-20250902-WA0018.jpg";
@@ -38,7 +38,7 @@ const galleryItems = [
   { id: 7,  image: Img0012, title: "Foto" },
   { id: 8,  image: Img0013, title: "Foto" },
   { id: 9,  image: Img0014, title: "Foto" },
-  { id: 10, image: Img0015, title: "Foto" },
+  
   { id: 11, image: Img0016, title: "Foto" },
   { id: 12, image: Img0017, title: "Foto" },
   { id: 13, image: Img0018, title: "Foto" },
