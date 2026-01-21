@@ -17,10 +17,10 @@ import Img0015 from "../assets/IMG-20250902-WA0015.jpg";
 import Img0016 from "../assets/IMG-20250902-WA0016.jpg";
 import Img0017 from "../assets/IMG-20250902-WA0017.jpg";
 import Img0018 from "../assets/IMG-20250902-WA0018.jpg";
-import Img0019 from "../assets/IMG-20250902-WA0019.jpg";
-import Img0020 from "../assets/IMG-20250902-WA0020.jpg";
-import Img0021 from "../assets/IMG-20250902-WA0021.jpg";
-import Img0022 from "../assets/IMG-20250902-WA0022.jpg";
+import Img0019 from "../assets/IMG-20250902-WA0019.jpeg";
+import Img0020 from "../assets/IMG-20250902-WA0020.jpeg";
+import Img0021 from "../assets/IMG-20250902-WA0021.jpeg";
+import Img0022 from "../assets/IMG-20250902-WA0022.jpeg";
 import Gallery2 from "../assets/gallery2.jpeg";
 import Gallery3 from "../assets/gallery3.jpeg";
 
