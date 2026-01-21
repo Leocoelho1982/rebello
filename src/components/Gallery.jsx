@@ -13,10 +13,14 @@ import Img0007 from "../assets/IMG-20251126-WA0007.jpg";
 import Img0012 from "../assets/IMG-20250902-WA0012.jpg";
 import Img0013 from "../assets/IMG-20250902-WA0013.jpg";
 import Img0014 from "../assets/IMG-20250902-WA0014.jpg";
-import Img0015 from "../assets/IMG-20250902-WA0015.jpg";
+
 import Img0016 from "../assets/IMG-20250902-WA0016.jpg";
 import Img0017 from "../assets/IMG-20250902-WA0017.jpg";
 import Img0018 from "../assets/IMG-20250902-WA0018.jpg";
+import Img0019 from "../assets/IMG-20250902-WA0019.jpeg";
+import Img0020 from "../assets/IMG-20250902-WA0020.jpeg";
+import Img0021 from "../assets/IMG-20250902-WA0021.jpeg";
+import Img0022 from "../assets/IMG-20250902-WA0022.jpeg";
 import Gallery2 from "../assets/gallery2.jpeg";
 import Gallery3 from "../assets/gallery3.jpeg";
 
@@ -34,14 +38,19 @@ const galleryItems = [
   { id: 7,  image: Img0012, title: "Foto" },
   { id: 8,  image: Img0013, title: "Foto" },
   { id: 9,  image: Img0014, title: "Foto" },
-  { id: 10, image: Img0015, title: "Foto" },
+  
   { id: 11, image: Img0016, title: "Foto" },
   { id: 12, image: Img0017, title: "Foto" },
   { id: 13, image: Img0018, title: "Foto" },
+  { id: 14, image: Img0019, title: "Foto" },
+  { id: 15, image: Img0020, title: "Foto" },
+  { id: 16, image: Img0021, title: "Foto" },
+  { id: 17, image: Img0022, title: "Foto" },
+  
 
   // 🔹 Outras da galeria
-  { id: 14, image: Gallery2, title: "Foto" },
-  { id: 15, image: Gallery3, title: "Foto" },
+  { id: 114, image: Gallery2, title: "Foto" },
+  { id: 115, image: Gallery3, title: "Foto" },
 ];
 
 

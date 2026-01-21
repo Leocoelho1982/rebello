@@ -1,7 +1,7 @@
 import React from "react";
 import { ImgComparisonSlider } from "@img-comparison-slider/react";
-import ImagemAntes from "../assets/antes.jpg";
-import ImagemDepois from "../assets/depois.jpg";
+import ImagemAntes from "../assets/antes.jpeg";
+import ImagemDepois from "../assets/depois.jpeg";
 
 export default function Services() {
   const whatsappHref = "https://wa.me/351912023400";
