@@ -17,6 +17,10 @@ import Img0015 from "../assets/IMG-20250902-WA0015.jpg";
 import Img0016 from "../assets/IMG-20250902-WA0016.jpg";
 import Img0017 from "../assets/IMG-20250902-WA0017.jpg";
 import Img0018 from "../assets/IMG-20250902-WA0018.jpg";
+import Img0019 from "../assets/IMG-20250902-WA0019.jpg";
+import Img0020 from "../assets/IMG-20250902-WA0020.jpg";
+import Img0021 from "../assets/IMG-20250902-WA0021.jpg";
+import Img0022 from "../assets/IMG-20250902-WA0022.jpg";
 import Gallery2 from "../assets/gallery2.jpeg";
 import Gallery3 from "../assets/gallery3.jpeg";
 
@@ -38,10 +42,15 @@ const galleryItems = [
   { id: 11, image: Img0016, title: "Foto" },
   { id: 12, image: Img0017, title: "Foto" },
   { id: 13, image: Img0018, title: "Foto" },
+  { id: 14, image: Img0019, title: "Foto" },
+  { id: 15, image: Img0020, title: "Foto" },
+  { id: 16, image: Img0021, title: "Foto" },
+  { id: 17, image: Img0022, title: "Foto" },
+  
 
   // 🔹 Outras da galeria
-  { id: 14, image: Gallery2, title: "Foto" },
-  { id: 15, image: Gallery3, title: "Foto" },
+  { id: 114, image: Gallery2, title: "Foto" },
+  { id: 115, image: Gallery3, title: "Foto" },
 ];
 
 
