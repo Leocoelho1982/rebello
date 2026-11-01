@@ -50,7 +50,7 @@ export default function Footer() {
               {/* sociais */}
               <div className="mt-6 flex items-center gap-4">
                 <a
-                  href="https://www.instagram.com/rebello_smp/"
+                  href="https://www.instagram.com/rebellosmp/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Instagram Rebello"
@@ -97,7 +97,7 @@ export default function Footer() {
                 </li>
                 <li className="flex items-center gap-3">
                   <FiMail className="shrink-0" />
-                  <a href="mailto:diogorebelo.edu@gmail.com" className="hover:underline">diogorebelo.edu@gmail.com</a>
+                  <a href="mailto:rebellosmp@gmail.com" className="hover:underline">rebellosmp@gmail.com</a>
                 </li>
               </ul>
 
@@ -123,13 +123,13 @@ export default function Footer() {
           <p className="text-sm">
             Criado por{" "}
             <a
-              href="https://codi-creative.example"
+              href="https://smartcodi.com"
               target="_blank"
               rel="noreferrer"
               className="font-medium underline decoration-white/50 hover:decoration-white"
-              aria-label="CoDi Creative (abre nova aba)"
+              aria-label="SmartCoDi (abre nova aba)"
             >
-              CoDi Creative
+              SmartCoDi Web Technologies
             </a>
           </p>
         </div>

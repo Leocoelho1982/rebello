@@ -90,7 +90,7 @@ export default function Hero() {
             {/* Botão Mobile */}
             <button
               aria-label={mobileOpen ? "Fechar menu" : "Abrir menu"}
-              className="lg:hidden inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-sky-400"
+              className="lg:hidden inline-flex cursor-pointer items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-sky-400"
               onClick={() => setMobileOpen((v) => !v)}
             >
               {mobileOpen ? <FiX size={24} /> : <FiMenu size={24} />}
@@ -142,7 +142,7 @@ export default function Hero() {
             </a>
             <button
               aria-label="Fechar menu"
-              className="inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-sky-400"
+              className="inline-flex cursor-pointer items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-sky-400"
               onClick={() => setMobileOpen(false)}
             >
               <FiX size={24} />

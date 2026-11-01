@@ -53,7 +53,7 @@ export default function Contact() {
               </span>
               <div>
                 <p className="text-sm uppercase tracking-wide text-white/60">Localização</p>
-                <p>R. de Anadia 16, 3810-208. Aveiro</p>
+                <p>R. Cónego Maio, 101A, 3810-089. Aveiro</p>
               </div>
             </li>
 
@@ -75,8 +75,8 @@ export default function Contact() {
               </span>
               <div>
                 <p className="text-sm uppercase tracking-wide text-white/60">Endereço de e-mail</p>
-                <a href="mailto:diogorebelo.edu@gmail.com" className="hover:underline">
-                  diogorebelo.edu@gmail.com
+                <a href="mailto:rebellosmp@gmail.com" className="hover:underline">
+                  rebellosmp@gmail.com
                 </a>
               </div>
             </li>
