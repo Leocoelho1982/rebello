@@ -2,55 +2,40 @@ import React, { useState, useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi"; // react-icons
 
-// IMPORTAÇÕES DAS FOTOS SELECCIONADAS
-import Img0002 from "../assets/IMG-20251126-WA0002.jpg";
-import Img0003 from "../assets/IMG-20251126-WA0003.jpg";
-import Img0004 from "../assets/IMG-20251126-WA0004.jpg";
-import Img0005 from "../assets/IMG-20251126-WA0005.jpg";
-import Img0006 from "../assets/IMG-20251126-WA0006.jpg";
-import Img0007 from "../assets/IMG-20251126-WA0007.jpg";
-
-import Img0012 from "../assets/IMG-20250902-WA0012.jpg";
-import Img0013 from "../assets/IMG-20250902-WA0013.jpg";
-import Img0014 from "../assets/IMG-20250902-WA0014.jpg";
-
-import Img0016 from "../assets/IMG-20250902-WA0016.jpg";
-import Img0017 from "../assets/IMG-20250902-WA0017.jpg";
-import Img0018 from "../assets/IMG-20250902-WA0018.jpg";
-import Img0019 from "../assets/IMG-20250902-WA0019.jpeg";
-import Img0020 from "../assets/IMG-20250902-WA0020.jpeg";
-import Img0021 from "../assets/IMG-20250902-WA0021.jpeg";
-import Img0022 from "../assets/IMG-20250902-WA0022.jpeg";
-import Gallery2 from "../assets/gallery2.jpeg";
-import Gallery3 from "../assets/gallery3.jpeg";
+// Novos trabalhos recebidos do cliente
+import Caso01 from "../assets/caso-micropigmentacao-01.jpeg";
+import Caso02 from "../assets/caso-micropigmentacao-02.jpeg";
+import Caso03 from "../assets/caso-micropigmentacao-03.jpeg";
+import Caso04 from "../assets/caso-micropigmentacao-04.jpeg";
+import Caso05 from "../assets/caso-micropigmentacao-05.jpeg";
+import Caso06 from "../assets/caso-micropigmentacao-06.jpeg";
+import Caso07 from "../assets/caso-micropigmentacao-07.jpeg";
+import Caso08 from "../assets/caso-micropigmentacao-08.jpeg";
+import Caso09 from "../assets/caso-micropigmentacao-09.jpeg";
+import Caso10 from "../assets/caso-micropigmentacao-10.jpeg";
+import Caso11 from "../assets/caso-micropigmentacao-11.jpeg";
+import Caso12 from "../assets/caso-micropigmentacao-12.jpeg";
+import Caso13 from "../assets/caso-micropigmentacao-13.jpeg";
+import Caso14 from "../assets/caso-micropigmentacao-14.jpeg";
+import Caso15 from "../assets/caso-micropigmentacao-15.jpeg";
 
 // Lista final da galeria
 const galleryItems = [
-  // 🔹 Novas fotos primeiro
-  { id: 1, image: Img0002, title: "Foto" },
-  { id: 2, image: Img0003, title: "Foto" },
-  { id: 3, image: Img0004, title: "Foto" },
-  { id: 4, image: Img0005, title: "Foto" },
-  { id: 5, image: Img0006, title: "Foto" },
-  { id: 6, image: Img0007, title: "Foto" },
-
-  // 🔹 Fotos antigas
-  { id: 7,  image: Img0012, title: "Foto" },
-  { id: 8,  image: Img0013, title: "Foto" },
-  { id: 9,  image: Img0014, title: "Foto" },
-  
-  { id: 11, image: Img0016, title: "Foto" },
-  { id: 12, image: Img0017, title: "Foto" },
-  { id: 13, image: Img0018, title: "Foto" },
-  { id: 14, image: Img0019, title: "Foto" },
-  { id: 15, image: Img0020, title: "Foto" },
-  { id: 16, image: Img0021, title: "Foto" },
-  { id: 17, image: Img0022, title: "Foto" },
-  
-
-  // 🔹 Outras da galeria
-  { id: 114, image: Gallery2, title: "Foto" },
-  { id: 115, image: Gallery3, title: "Foto" },
+  { id: 1, image: Caso01, title: "Resultado REBELLO" },
+  { id: 2, image: Caso02, title: "Resultado REBELLO" },
+  { id: 3, image: Caso03, title: "Resultado REBELLO" },
+  { id: 4, image: Caso04, title: "Resultado REBELLO" },
+  { id: 5, image: Caso05, title: "Resultado REBELLO" },
+  { id: 6, image: Caso06, title: "Resultado REBELLO" },
+  { id: 7, image: Caso07, title: "Resultado REBELLO" },
+  { id: 8, image: Caso08, title: "Resultado REBELLO" },
+  { id: 9, image: Caso09, title: "Resultado REBELLO" },
+  { id: 10, image: Caso10, title: "Resultado REBELLO" },
+  { id: 11, image: Caso11, title: "Resultado REBELLO" },
+  { id: 12, image: Caso12, title: "Resultado REBELLO" },
+  { id: 13, image: Caso13, title: "Resultado REBELLO" },
+  { id: 14, image: Caso14, title: "Resultado REBELLO" },
+  { id: 15, image: Caso15, title: "Resultado REBELLO" },
 ];
 
 
