@@ -50,7 +50,7 @@ export default function Footer() {
               {/* sociais */}
               <div className="mt-6 flex items-center gap-4">
                 <a
-                  href="https://www.instagram.com/rebello_smp/"
+                  href="https://www.instagram.com/rebellosmp/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Instagram Rebello"
@@ -97,7 +97,7 @@ export default function Footer() {
                 </li>
                 <li className="flex items-center gap-3">
                   <FiMail className="shrink-0" />
-                  <a href="mailto:diogorebelo.edu@gmail.com" className="hover:underline">diogorebelo.edu@gmail.com</a>
+                  <a href="mailto:rebellosmp@gmail.com" className="hover:underline">rebellosmp@gmail.com</a>
                 </li>
               </ul>
 
